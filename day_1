@@ -1,0 +1,26 @@
+Today I learned about different data types and some basics surreounding arithmetic and string operations.
+
+#Stuff i dont know or needed brushing up on:
+
+** - power of (another way of doing exponents)
+// - divided by and it rounds down; returns an integer instead of float
+
+complex - data type, deals with complex numbers
+
+bin() - function that returns the binary representation of an integer
+
+constants - should be in all caps
+#don't create variables that start with double underscores
+
+assigning multiple variables quickly
+EX: a,b,c = 1,2,3
+
+Can use three single quotes for long multi-line strings. '''
+like this
+and this
+'''
+
+#Escape Sequence:
+\ - whatever comes directly after the backslash is included in the string
+\t - add tab spacing
+\n - new line
