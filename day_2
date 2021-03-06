@@ -1,0 +1,133 @@
+# Formatted Strings
+
+name = 'Johnny'
+age = 55
+
+print(f'hi {name}. You are {age} years old.')
+
+'''
+adding the f in front of the string turns it into a formatted string in which we are asking that the variables in the braket be made available as strings. By doing this we can cut out the cumbersome need for +'s and starting and stopping the string (in essence we are doing away with the concatenation process)
+'''
+#also side note: python doesn't have the syntax for 
+#multi line comments, you have to add the # before 
+#each line, however you can use the triple single
+#quote to achieve the same effect since python ignores
+#unassigned string literals.
+
+#Python2 formatting looks like below:
+print('hi {}. You are {} years old.'.format(name, age))
+print('hi {0}. You are {1} years old.'.format(name, age))
+
+#String Indexes
+
+selfish = '01234567'
+          #01234567
+print(selfish[0])
+
+
+'''
+Notes: Remember that all indexing in programming starts at 0. When we use the square brackets the first item inside is where you start then a colon and where to stop, we can also add a third thing if we want called stepover. EX: [start:stop:stepover]. All of this is known as string slicing.
+'''
+#COOL SIDE NOTE: if you do a negative index in python 
+#it starts from the back end of the list, however if you
+#go past the number of elements backwards for instance
+#-9 in this example it throws the index out of bounds 
+#error.
+
+print(selfish[-9])
+
+#Immutability
+
+#Strings are immutable which means you cannot change 
+#part of it you can only reassign a new value to the 
+#variable or create a whole new string
+
+#Built-In Functions + Methods
+
+greet = 'heeeeelllllloooo'
+print(len(greet))
+print(greet[0:len(greet)])
+
+quote = 'to be or not to be'
+print(quote.upper())
+print(quote.capitalize())
+print(quote.find('be'))
+print(quote.replace('be', 'me'))
+
+print(quote)
+
+#booleans - can be either true or false
+name = 'Brandon'
+is_cool = False
+
+is_cool = True
+
+print(bool(1))
+print(bool(0))
+print(bool(8))
+
+#Type conversion
+
+name = 'brandon'
+age = 60
+relationship_status = 'in a relationship'
+
+print(relationship_status)
+
+birth_year = input('what year were you born?')
+
+age = 2021 - int(birth_year)
+
+print(f'your age is: {age}')
+
+#Remember data types
+bool
+int
+float
+**complex
+str
+list
+tuple
+set
+dict
+
+#Developer fundamental (2)
+#Commenting is an important part of coding as it helps you or any future 
+#readers of your code understand what you code is doing.
+#1. Add comments that add value to your code.
+#2. Write code that is easy to read and easy to understand
+#3. Be concise and keep things simple
+
+#Program takes input for username and password and 
+#returns a string with the provided information.
+#THIS IS THE PROGRAM I WROTE
+username = input('Please enter a username: ')
+password = input('Please enter a super secret password: ')
+
+covered_pw = '*' * len(password)
+
+print(f'{username}, your password {covered_pw} is {len(password)} characters long')
+
+#new trick: 
+#print('*' * 10)
+
+#THIS IS THE EXAMPLE PROGRAM I SAW AFTER WRTITING MY OWN
+
+username = input('What is your username? ')
+password = input('What is your password? ')
+
+password_length = len(password)
+hidden_password = '*' * password_length
+
+print(f'{username}, your password, {hidden_password}, is {password_length} letters long.')
+
+#Lists - an ordered sequence of objects of any type
+
+li = [1,2,3,4,5]
+li2 = ['a','b','c']
+li3 = [1,2,'a',True]
+
+#Data Structure - way for us to organize data 
+
+amazon_cart = ['notebooks', 'sunglasses']
+print(amazon_cart[1])
